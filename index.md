@@ -3,17 +3,20 @@
 
 # *rx* is a modern and minimalist pixel editor.
 
-*rx* is an extensible, modern and minimalist pixel editor, designed with great
-care and love with artists and animators in mind. It is built to have
-as little UI as possible, and takes inspiration from [vi][0]'s modal nature and
-scriptability.
+*rx* is an *extensible*, modern and minimalist pixel editor, designed with great
+care and love for artists and hackers. It was conceived to have
+as little UI as possible, and instead focus on the *work*.
 
-It was created in 2019 by [cloudhead](https://cloudhead.io) and implemented in
-the [rust][1] programming language, with the goal of creating a new kind of
-tool for artists and hackers.
+To achieve this, `rx` takes inspiration from [vi][0]'s modal nature and is
+built around a *command system*, unique to tools of its kind.
+
+*rx was created in 2019 by [cloudhead](https://cloudhead.io) and implemented
+in the [rust][1] programming language, using the [rgx][2] library by
+the same author.*
 
 [0]: https://en.wikipedia.org/wiki/Vi
 [1]: https://rust-lang.org
+[2]: https://github.com/cloudhead/rgx
 
 ## get started
 
@@ -23,23 +26,23 @@ tool for artists and hackers.
 
 See the [build][build] section for further details.
 
-* To learn how to use *rx*, read the [guide][guide].
-* To learn how *rx* works, browse the [source](https://github.com/cloudhead/rx).
+* To learn how to *use* rx, read the [guide][guide].
+* To learn how rx *works*, browse the [source](https://github.com/cloudhead/rx).
 
 ## goals
 
-* **Minimal.** Small, hackable codebase and dependency footprint.
+* **Minimal.** Small, hackable codebase and dependency footprint. The editor
+  should only include what is necessary.
 
-* **Beautiful.** Clean, modern aesthetics with an attention to detail.
+* **Beautiful.** Clean, modern aesthetics with a strong attention to detail.
 
 * **Snappy.** No perceptible input lag. Update and paint time should be
   less than `8ms` on commodity hardware at 1920x1080.
 
 * **Configurable & extensible.** Artists should be in control of their workflow.
+  If it isn't built-in, it should be easy to extend the editor's functionality.
 
-* **Cross-platform.** First-class Linux, macOS and Windows support.
-
-* **Efficient.** Battery drain should be minimized. Memory footprint should
+* **Resource efficient.** Battery drain should be minimized. Memory footprint should
   be small.
 
 ## features
