@@ -39,6 +39,7 @@ h1 {
 
 h2 {
 	font-size: 1.3em;
+	line-height: 1.4em;
 	margin-bottom: 30px;
 	margin-top: 90px;
 }
@@ -73,13 +74,16 @@ li > strong:first-child {
 	color: #BBFFEE;
 }
 
+code {
+	color: #BBFFEE;
+}
+
 pre {
 	margin-left: 30px;
 }
 
-code {
-	color: #BBFFEE;
-	white-space: nowrap;
+pre code {
+	white-space: pre-wrap;
 }
 
 strong {
@@ -169,6 +173,10 @@ only screen and (max-width: 720px) {
 	}
 	h2 {
 		margin-top: 45px;
+	}
+	video {
+		max-width: 100%;
+		height: auto;
 	}
 	img[src="gifs/demo.gif"] {
 		width: 100%;

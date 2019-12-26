@@ -19,7 +19,10 @@
 </a>
 <script>
   document.querySelectorAll("video").forEach(function (e) {
-    e.setAttribute("controls", "");
+    e.controls = true;
+    e.playsinline = true;
+    e.autoplay = true;
+    e.muted = true;
     e.setAttribute("preload", "auto");
     e.setAttribute("disablePictureInPicture", "");
     e.setAttribute("controlslist", "nodownload nofullscreen");

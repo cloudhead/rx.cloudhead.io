@@ -140,12 +140,9 @@ active set of key mappings and commands inside of `rx`.
 
 ## support the project
 
-If you find this project useful, consider supporting it by sending ₿ (Bitcoin) to
-the following address:
-
-    1MpF7p9A8LJabZn7ehHpGbLcN5PCXRdGqm
-
-or by [sponsoring][sponsor] the author on GitHub.
+If you find this project useful, consider supporting it by sending Bitcoin to
+`1MpF7p9A8LJabZn7ehHpGbLcN5PCXRdGqm` or by [sponsoring][sponsor] the author on
+GitHub.
 
 [sponsor]: https://github.com/sponsors/cloudhead
 
