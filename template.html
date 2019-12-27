@@ -20,9 +20,9 @@
 <script>
   document.querySelectorAll("video").forEach(function (e) {
     e.controls = true;
-    e.playsinline = true;
     e.autoplay = true;
-    e.muted = true;
+    e.setAttribute("muted", "");
+    e.setAttribute("playsinline", "");
     e.setAttribute("preload", "auto");
     e.setAttribute("disablePictureInPicture", "");
     e.setAttribute("controlslist", "nodownload nofullscreen");
