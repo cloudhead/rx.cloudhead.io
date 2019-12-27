@@ -104,7 +104,7 @@ it directly from your terminal.
 Feel free to rename it to `rx` and move it to your `PATH`. To uninstall,
 simply delete the file.
 
-[app]: https://github.com/cloudhead/rx/releases/download/v0.3.0/rx-0.3.0-x86_64-unknown-linux-gnu.AppImage
+[app]: https://github.com/cloudhead/rx/releases/download/v0.3.0/rx-0.3.0-x86_64.AppImage
 [appimage]: https://appimage.org/
 
 For *macOS* and *Windows*, official builds are not yet available. See the
