@@ -79,8 +79,7 @@ On Linux, [Vulkan][vulkan] support is required.
 
 ### macOS
 
-On macOS, [Metal][metal] support is required. This usually requires installing Xcode
-and the Xcode Command Line Tools.
+On macOS, [Metal][metal] support is required.
 
 [metal]: https://developer.apple.com/metal/
 
