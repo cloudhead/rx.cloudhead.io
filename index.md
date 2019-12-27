@@ -20,11 +20,13 @@ the same author.*
 
 ## get started
 
-*rx* can be installed on Linux, macOS and Windows with:
+*rx* can be installed on Linux, macOS and Windows with [cargo][cargo], using
+the following command:
 
-    $ cargo install rx
+    cargo install rx-editor
 
-See the [build][build] section for further details.
+See the [build][build] section for further details. If you'd prefer to install
+a binary, see the relevant section on [binary releases](#binaries).
 
 * To learn how to *use* rx, read the [guide][guide].
 * To learn how rx *works*, browse the [source](https://github.com/cloudhead/rx).
@@ -86,14 +88,14 @@ and the Xcode Command Line Tools.
 
 On Windows, *Vulkan* support is required.
 
-<a id="download"></a>
+<a id="binaries"></a>
 
-## download
+## binary releases
 
 At the moment, only *Linux* binaries are available. You can download the
 latest version here:
 
-> [rx-0.3.0-x86_64-unknown-linux-gnu.AppImage][app]
+> [rx-0.3.0-x86_64.AppImage][app]
 
 This is an [AppImage][appimage], a self-contained application. Before opening
 it, make it executable with `chmod +x`. You can then double-click it or execute
@@ -117,7 +119,7 @@ contact the author at <rx@cloudhead.io>.*
 
 If you have [cargo][cargo] and [cmake][cmake] installed, simply run:
 
-    $ cargo install rx
+    $ cargo install rx-editor
 
 This will download the latest *stable* release of `rx` and install it under
 `~/.cargo/bin/rx`.  If you prefer a different install location, you can specify
