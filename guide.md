@@ -81,7 +81,10 @@ respectively. Brush *modes* are behaviors that can be activated on the tool:
 * **perfect**: "pixel-perfect" mode.
 * **xray**: see the underlying pixel color at all times.
 
-<video width="720" height="540" src="videos/painting.webm" type="video/webm"></video>
+<video width="720" height="540">
+  <source src="videos/painting.webm" type="video/webm"/>
+  <source src="videos/painting.mp4" type="video/mp4"/>
+</video>
 
 Brush modes are activated with the `:brush/set` command and deactivated with
 `:brush/unset`. They can also be toggled with `:brush/toggle`. For example,
@@ -154,7 +157,10 @@ a time forwards with <kbd>w</kbd>, and backwards with <kbd>b</kbd>
 <kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd> and <kbd>l</kbd> keys
 (`:selection/move`).
 
-<video width="720" height="540" src="videos/manipulating.webm" type="video/webm"></video>
+<video width="720" height="540">
+  <source src="videos/manipulating.webm" type="video/webm"/>
+  <source src="videos/manipulating.mp4" type="video/mp4"/>
+</video>
 
 With a selection in place, the `:selection/yank` (shortcut <kbd>y</kbd>)
 command can be used to create a copy which can be then placed anywhere with the
