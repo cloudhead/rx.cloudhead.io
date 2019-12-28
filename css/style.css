@@ -169,7 +169,7 @@ only screen and (max-width: 720px) {
 		width: 100%;
 		padding-top: 0;
 	}
-	body > p, h1, h2, h3, h4, blockquote {
+	body > p, h1, h2, h3, h4, blockquote, nav {
 		margin-left: 15px;
 		margin-right: 15px;
 	}
@@ -194,6 +194,12 @@ only screen and (max-width: 720px) {
 	}
 	#logo {
 		position: static;
+	}
+	#index nav {
+		opacity: 1.0 !important;
+	}
+	#index nav span {
+		width: 96px;
 	}
 }
 
@@ -236,9 +242,6 @@ only screen and (max-width: 720px) {
 #index nav:hover {
 	opacity: 1.0;
 }
-#index nav a:not(:last-child) {
-	margin-right: 32px;
-}
 #index nav a {
 	color: grey;
 }
@@ -247,5 +250,15 @@ only screen and (max-width: 720px) {
 	border: none;
 	width: 1em;
 	height: 1em;
-	vertical-align: text-top;
+	vertical-align: middle;
+}
+#index nav span {
+	display: inline-block;
+	line-height: 2em;
+}
+#index nav span:not(:last-child) {
+	margin-right: 32px;
+}
+#index nav li {
+	text-align: left;
 }

@@ -2,10 +2,10 @@
 # *rx* is a modern and minimalist pixel editor.
 
 <nav>
-  💻 <a href="#install">install</a>
-  📖 <a href="/guide.html">guide</a>
-  <img src="images/github.png"/> <a href="https://github.com/cloudhead/rx">source</a>
-  💚 <a href="#support">support</a>
+  <span>💻 <a href="#install">install</a></span>
+  <span>📖 <a href="/guide.html">guide</a></span>
+  <span><img src="images/github.png"/> <a href="https://github.com/cloudhead/rx">source</a></span>
+  <span>💚 <a href="#support">support</a></span>
 </nav>
 
 *rx* is an *extensible*, modern and minimalist pixel editor, designed with great
