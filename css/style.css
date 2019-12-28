@@ -34,7 +34,7 @@ h1 {
 	font-size: 3em;
 	line-height: 1.4em;
 	color: #CC2266;
-	margin-bottom: 90px;
+	margin-bottom: 45px;
 }
 
 h2 {
@@ -80,6 +80,7 @@ li > strong:first-child {
 
 code {
 	color: #BBFFEE;
+	white-space: nowrap;
 }
 
 pre {
@@ -140,6 +141,7 @@ blockquote a:only-child {
 	left: 0;
 	top: 0;
 }
+
 #logo img {
 	border: none;
 	margin: 15px;
@@ -224,4 +226,26 @@ only screen and (max-width: 720px) {
 	position: fixed;
 	top: 0;
 	right: 0;
+}
+
+#index nav {
+	padding: 0 0px;
+	margin-bottom: 48px;
+	opacity: 0.5;
+}
+#index nav:hover {
+	opacity: 1.0;
+}
+#index nav a:not(:last-child) {
+	margin-right: 32px;
+}
+#index nav a {
+	color: grey;
+}
+#index nav img {
+	margin: 0;
+	border: none;
+	width: 1em;
+	height: 1em;
+	vertical-align: text-top;
 }

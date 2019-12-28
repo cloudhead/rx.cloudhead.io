@@ -1,35 +1,32 @@
 
-![rx](gifs/demo.gif)
-
 # *rx* is a modern and minimalist pixel editor.
+
+<nav>
+  💻 <a href="#install">install</a>
+  📖 <a href="/guide.html">guide</a>
+  <img src="images/github.png"/> <a href="https://github.com/cloudhead/rx">source</a>
+  💚 <a href="#support">support</a>
+</nav>
 
 *rx* is an *extensible*, modern and minimalist pixel editor, designed with great
 care and love for artists and hackers. It was conceived to have
 as little UI as possible, and instead focus on the *work*.
 
+![rx](gifs/demo.gif)
+
 To achieve this, `rx` takes inspiration from [vi][0]'s modal nature and is
 built around a *command system*, unique to tools of its kind.
 
-*rx was created in 2019 by [cloudhead](https://cloudhead.io) and implemented
-in the [rust][1] programming language, using the [rgx][2] library by
-the same author.*
-
 [0]: https://en.wikipedia.org/wiki/Vi
-[1]: https://rust-lang.org
-[2]: https://github.com/cloudhead/rgx
 
 ## get started
 
-*rx* can be installed on Linux, macOS and Windows with [cargo][cargo], using
-the following command:
-
-    cargo install rx-editor
-
-See the [build][build] section for further details. If you'd prefer to install
-a binary, see the relevant section on [binary releases](#binaries).
+*rx* can be installed on Linux, macOS and Windows.  See the [install](#install)
+section for further details. If you'd prefer to download a pre-built binary, see
+the section on [binary releases](#binaries).
 
 * To learn how to *use* rx, read the [guide][guide].
-* To learn how rx *works*, browse the [source](https://github.com/cloudhead/rx).
+* To learn how rx *works*, browse the [source][source].
 
 ## goals
 
@@ -87,38 +84,17 @@ On macOS, [Metal][metal] support is required.
 
 On Windows, *Vulkan* support is required.
 
-<a id="binaries"></a>
+<a id="install"></a>
 
-## binary releases
+## install
 
-At the moment, only *Linux* binaries are available. You can download the
-latest version here:
+*The following is to install from source. If you'd like to download a pre-built
+binary, see the [next](#binaries) section*.
 
-> [rx-0.3.0-x86_64.AppImage][app]
+With [cargo][cargo] and [cmake][cmake] installed, run:
 
-This is an [AppImage][appimage], a self-contained application. Before opening
-it, make it executable with `chmod +x`. You can then double-click it or execute
-it directly from your terminal.
-
-Feel free to rename it to `rx` and move it to your `PATH`. To uninstall,
-simply delete the file.
-
-[app]: https://github.com/cloudhead/rx/releases/download/v0.3.0/rx-0.3.0-x86_64.AppImage
-[appimage]: https://appimage.org/
-
-For *macOS* and *Windows*, official builds are not yet available. See the
-[build][build] section to build and install *rx* from source.
-
-*If you'd like to help the project by offering macOS or Windows builds, please
-contact the author at <rx@cloudhead.io>.*
-
-<a id="build"></a>
-
-## build & install from source
-
-If you have [cargo][cargo] and [cmake][cmake] installed, simply run:
-
-    $ cargo install rx-editor
+    cargo install --git https://github.com/cloudhead/rx \
+                  --tag v0.3.0
 
 This will download the latest *stable* release of `rx` and install it under
 `~/.cargo/bin/rx`.  If you prefer a different install location, you can specify
@@ -132,34 +108,62 @@ On **macOS**, **Xcode** and the **Xcode Command Line Tools** are required.  The
 latter can be obtained by running `xcode-select --install`. CMake can be
 installed with `brew install cmake`.
 
-## usage
+<a id="binaries"></a>
 
-The [guide][guide] is the best place to learn how to use `rx`.
+## binary releases
 
-You can also use the `:help` command (shortcut <kbd>?</kbd>) to show the
-active set of key mappings and commands inside of `rx`.
+At the moment, only *Linux* and *macOS* binaries are available.
 
-## support the project
+### linux
 
-If you find this project useful, consider supporting it by sending Bitcoin to
+> [rx-0.3.0-x86_64.AppImage][app-linux]
+
+This is an [AppImage][appimage], a self-contained application. Before opening
+it, make it executable with `chmod +x`. You can then double-click it or execute
+it directly from your terminal.
+
+Feel free to rename it to `rx` and move it to your `PATH`. To uninstall,
+simply delete the file.
+
+[app-linux]: https://github.com/cloudhead/rx/releases/download/v0.3.0/rx-0.3.0-x86_64.AppImage
+[appimage]: https://appimage.org/
+
+### macOS
+
+> [rx-0.3.0-x86_64.app.zip][app-macos]
+
+Unzip and move the app to your `Applications` folder.
+
+[app-macos]: https://github.com/cloudhead/rx/releases/download/v0.3.0/rx-0.3.0-x86_64.app.zip
+
+<a id="support"></a>
+
+## support *rx* 💚
+
+If you find this project useful, consider supporting it by donating Bitcoin to
 `1MpF7p9A8LJabZn7ehHpGbLcN5PCXRdGqm` or by [sponsoring][sponsor] the author on
 GitHub.
 
 [sponsor]: https://github.com/sponsors/cloudhead
 
-## bugs
+## about
+
+*rx* was created in 2019 by [cloudhead](https://cloudhead.io) and implemented
+in the [rust][1] programming language, using the [rgx][2] library by
+the same author.
+
+[1]: https://rust-lang.org
+[2]: https://github.com/cloudhead/rgx
+
+*rx* is free software, licensed under the **GPL**. See the `LICENSE` file in
+the code repository for more details.
 
 If you encounter a bug, please open an issue on the [tracker][tracker], or
 send an email to <rx@cloudhead.io>.
 
 [tracker]: https://github.com/cloudhead/rx/issues
 
-## license & copyright
-
-*rx* is free software, licensed under the **GPL**. See the `LICENSE` file in
-the code repository for more details.
-
 &copy; 2019 Alexis Sellier
 
 [guide]: guide.html
-[build]: #build
+[source]: https://github.com/cloudhead/rx
