@@ -162,7 +162,8 @@ blockquote a:only-child {
 }
 
 :focus {
-	outline: 1px dashed grey;
+	outline: none;
+	text-decoration: underline;
 }
 
 @media
