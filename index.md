@@ -93,8 +93,9 @@ binary, see the [next](#binaries) section*.
 
 With [cargo][cargo] and [cmake][cmake] installed, run:
 
-    cargo install --git https://github.com/cloudhead/rx \
-                  --tag v0.3.0
+    cargo install \
+        --git https://github.com/cloudhead/rx \
+        --tag v0.3.0
 
 This will download the latest *stable* release of `rx` and install it under
 `~/.cargo/bin/rx`.  If you prefer a different install location, you can specify

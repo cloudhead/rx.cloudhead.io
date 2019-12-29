@@ -201,6 +201,12 @@ only screen and (max-width: 720px) {
 	#index nav span {
 		width: 96px;
 	}
+	pre {
+		overflow: scroll !important;
+	}
+	pre code {
+		white-space: pre !important;
+	}
 }
 
 /*******************************************************/
