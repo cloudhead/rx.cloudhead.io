@@ -161,6 +161,10 @@ blockquote a:only-child {
 	background: #999999;
 }
 
+:focus {
+	outline: 1px dashed grey;
+}
+
 @media
 only screen and (max-device-width: 720px),
 only screen and (max-width: 720px) {
