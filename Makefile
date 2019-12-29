@@ -1,4 +1,4 @@
-PAGES    := guide.html index.html
+PAGES    := guide.html index.html palettes.html
 TEMPLATE := template.html
 STATIC   := $(PAGES) favicon.ico css/ images/ fonts/ gifs/ videos/
 

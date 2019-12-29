@@ -271,6 +271,8 @@ palette might be saved in the following script under the path `rgb.rx`:
 
 and loaded with `:source rgb.rx`.
 
+See the [palettes](/palettes.html) section for some popular pre-made palettes.
+
 > **Tip:** Simply entering `#ff0000` as a command will expand to `p/add
 > #ff0000`.
 
