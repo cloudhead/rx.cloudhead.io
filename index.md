@@ -131,11 +131,11 @@ simply delete the file.
 
 ### macOS
 
-> [rx-0.3.0-x86_64.app.zip][app-macos]
+> [rx-0.3.0-x86_64.app.tar.gz][app-macos]
 
-Unzip and move the app to your `Applications` folder.
+Extract and move the app to your `Applications` folder.
 
-[app-macos]: https://github.com/cloudhead/rx/releases/download/v0.3.0/rx-0.3.0-x86_64.app.zip
+[app-macos]: https://github.com/cloudhead/rx/releases/download/v0.3.0/rx-0.3.0-x86_64.app.tar.gz
 
 <a id="support"></a>
 
