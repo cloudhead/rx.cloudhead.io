@@ -204,7 +204,7 @@ only screen and (max-width: 720px) {
 		opacity: 1.0 !important;
 	}
 	#index nav span {
-		width: 96px;
+		width: 120px;
 	}
 	pre {
 		overflow: scroll !important;
