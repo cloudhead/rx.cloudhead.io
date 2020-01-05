@@ -7,6 +7,8 @@ body {
 	padding: 90px 0;
 	line-height: 1.4em;
 	font-size: 20px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: greyscale;
 }
 
 body, code, pre, kbd, h1, h2, h3, h4, h5 {
