@@ -60,29 +60,8 @@ the section on [binary releases](#binaries).
 
 ## system requirements
 
-`rx` currently supports Linux, macOS and Windows.
-
-### linux
-
-On Linux, [Vulkan][vulkan] support is required.
-
-* On debian-based systems, the drivers can be installed via the
-`mesa-vulkan-drivers` package. In addition, `vulkan-tools` may be required.
-* On Arch Linux, `vulkan-icd-loader` is required in addition to the drivers. See
-[here][arch] for more information.
-
-[arch]: https://wiki.archlinux.org/index.php/Vulkan
-[vulkan]: https://www.khronos.org/vulkan/
-
-### macOS
-
-On macOS, [Metal][metal] support is required.
-
-[metal]: https://developer.apple.com/metal/
-
-### windows
-
-On Windows, *Vulkan* support is required.
+`rx` currently supports **Linux**, **macOS** and **Windows** with OpenGL 3.3 or
+later.
 
 <a id="install"></a>
 
@@ -95,7 +74,7 @@ With [cargo][cargo] and [cmake][cmake] installed, run:
 
     cargo install \
         --git https://github.com/cloudhead/rx \
-        --tag v0.3.0
+        --tag v0.3.1
 
 This will download the latest *stable* release of `rx` and install it under
 `~/.cargo/bin/rx`.  If you prefer a different install location, you can specify
@@ -117,7 +96,7 @@ At the moment, only *Linux* and *macOS* binaries are available.
 
 ### linux
 
-> [rx-0.3.0-x86_64.AppImage][app-linux]
+> [rx-0.3.1-x86_64.AppImage][app-linux]
 
 This is an [AppImage][appimage], a self-contained application. Before opening
 it, make it executable with `chmod +x`. You can then double-click it or execute
@@ -126,7 +105,7 @@ it directly from your terminal.
 Feel free to rename it to `rx` and move it to your `PATH`. To uninstall,
 simply delete the file.
 
-[app-linux]: https://github.com/cloudhead/rx/releases/download/v0.3.0/rx-0.3.0-x86_64.AppImage
+[app-linux]: https://github.com/cloudhead/rx/releases/download/v0.3.1/rx-0.3.1-x86_64.AppImage
 [appimage]: https://appimage.org/
 
 ### macOS
