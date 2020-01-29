@@ -115,8 +115,8 @@ pixel grid. `rx` can display a grid with the `:set grid` command. It's spacing
 and color can be controlled with the `grid/spacing` and `grid/color`
 settings. For example,
 
-    :set grid/spacing 4 4
-    :set grid/color #ff0000
+    :set grid/spacing = 4 4
+    :set grid/color = #ff0000
 
 will set the grid to *red*, and *4 by 4* pixels.
 
