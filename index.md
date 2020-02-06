@@ -92,7 +92,7 @@ installed with `brew install cmake`.
 
 ## binary releases
 
-At the moment, only *Linux* and *macOS* binaries are available.
+At the moment, only *Linux* binaries are available.
 
 ### linux
 
@@ -107,14 +107,6 @@ simply delete the file.
 
 [app-linux]: https://github.com/cloudhead/rx/releases/download/v0.4.0/rx-0.4.0-x86_64.AppImage
 [appimage]: https://appimage.org/
-
-### macOS
-
-> [rx-0.3.0-x86_64.app.tar.gz][app-macos]
-
-Extract and move the app to your `Applications` folder.
-
-[app-macos]: https://github.com/cloudhead/rx/releases/download/v0.3.0/rx-0.3.0-x86_64.app.tar.gz
 
 <a id="support"></a>
 
