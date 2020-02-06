@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 
-require 'aws-sdk-v1'
+require 'aws-sdk-s3'
 require 'digest/md5'
 require 'rack/mime'
 
-SITE = AWS::S3.new(region: ENV['AWS_REGION'] || 'eu-west-1')
-              .buckets[File.basename(Dir.pwd)]
+CLIENT = Aws::S3::Client.new(region: ENV['AWS_REGION'] || 'eu-west-1')
+BUCKET = File.basename(Dir.pwd)
 
 USAGE = <<EOF
 usage: #{$0} file...
@@ -29,15 +29,19 @@ def upload(files=["."])
     mime = Rack::Mime::MIME_TYPES[File.extname(f)]
     cache = if /^text/.match?(mime) then 60 else 3600 end
 
-    obj = SITE.objects[f]
+    obj = CLIENT.get_object({bucket: BUCKET, key: f}) rescue nil
     local_md5 = md5sum(f).chomp
-    remote_md5 = obj.etag.tr('"', '') if obj.exists?
+    remote_md5 = obj.etag.tr('"', '') if obj
 
     if local_md5.to_s != remote_md5.to_s
-      obj.write(Pathname.new(f),
-                :content_type => mime,
-                :cache_control => "max-age=#{cache}")
-      obj.acl = :public_read
+      CLIENT.put_object(
+        body: File::new(f),
+        key: f,
+        bucket: BUCKET,
+        content_type: mime,
+        cache_control: "max-age=#{cache}",
+        acl: "public-read"
+      )
 
       puts "ok"
     else
