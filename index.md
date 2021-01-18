@@ -6,6 +6,7 @@
   <span>📖 <a href="/guide.html">guide</a></span>
   <span><img src="images/github.png"/> <a href="https://github.com/cloudhead/rx">source</a></span>
   <span>💚 <a href="#support">support</a></span>
+  <span>🧙 <a href="#community">community</a></span>
 </nav>
 
 *rx* is an *extensible*, modern and minimalist pixel editor, designed with great
@@ -27,6 +28,13 @@ the section on [binary releases](#binaries).
 
 * To learn how to *use* rx, read the [guide][guide].
 * To learn how rx *works*, browse the [source][source].
+
+<a id="community"></a>
+
+## community 🧙
+
+The *rx* community can be found on [discord](https://discord.com/invite/VtjUpj8n).
+Come hang out, share your work or discuss ideas around the editor.
 
 ## goals
 
