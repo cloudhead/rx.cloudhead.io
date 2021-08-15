@@ -124,12 +124,10 @@ If you find this project useful, consider [supporting](https://cloudhead.io/dona
 
 ## about
 
-*rx* was created in 2019 by [cloudhead](https://cloudhead.io) and implemented
-in the [rust][1] programming language, using the [rgx][2] library by
-the same author.
+rx was created in 2019 by [cloudhead](https://cloudhead.io) and implemented
+in the [rust][1] programming language.
 
 [1]: https://rust-lang.org
-[2]: https://github.com/cloudhead/rgx
 
 *rx* is free software, licensed under the **GPL**. See the `LICENSE` file in
 the code repository for more details.
