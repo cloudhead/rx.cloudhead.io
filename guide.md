@@ -111,7 +111,7 @@ redo, press <kbd>r</kbd> (or `:redo`).
 ### using the grid
 
 When working with certain kinds of images, it may be helpful to work around a
-pixel grid. `rx` can display a grid with the `:set grid` command. It's spacing
+pixel grid. `rx` can display a grid with the `:set grid` command. Its spacing
 and color can be controlled with the `grid/spacing` and `grid/color`
 settings. For example,
 
